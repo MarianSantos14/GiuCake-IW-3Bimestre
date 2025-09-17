@@ -1,0 +1,85 @@
+body {
+    max-height: 100vh;
+}
+
+.fundo-produto {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.meio-circulo {
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-color: #FCCCD8;
+}
+
+.fundo-meio-circulo {
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    background-color: #FFEBF0;
+}
+
+.produto-header {
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.circulo2 {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.carrinho {
+    width: 100px;
+}
+
+.menosMais {
+    font-size: 20px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    background-color: var(--cor-destaque);
+    border-radius: 50%;
+}
+
+.produto-body {
+    position: absolute;
+    top: 450px;
+    width: 400px;
+    text-align: center;
+    /* left: 50%;
+            transform: translateX(-50%); */
+}
+
+.espaco {
+    top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.person-circle {
+    font-size: 40px;
+    color: #D42D66;
+}
+
+#numero {
+    width: 90px;
+    text-align: center;
+}

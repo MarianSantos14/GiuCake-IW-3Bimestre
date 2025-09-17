@@ -1,0 +1,21 @@
+.circulo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #FFAEC9;
+    box-shadow: rgba(255, 4, 146, 0.2) 0px 8px 24px;
+    ;
+}
+
+.produtos>a {
+    text-align: center;
+    scale: 1;
+    transition: scale .3s ease;
+}
+
+.produtos>a:hover {
+    scale: 1.02;
+    transition: scale .3s ease;
+}
