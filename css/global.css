@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --cor-destaque: #D42D66;
+    --cor-destaque-hover: #bd1d55;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logoGiuCake {
+    width: 32px;
+}
+
+.btn-destaque {
+    background-color: transparent;
+    border: 2px solid var(--cor-destaque);
+    color: var(--cor-destaque);
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.btn-destaque:hover {
+    background-color: var(--cor-destaque-hover);
+    color: white;
+    transition: .3s ease;
+}
+
+.personIcon {
+    color: var(--cor-destaque);
+    border-radius: 100%;
+    width: 36px;
+}
+
+.nav-link.active {
+    color: var(--cor-destaque) !important;
+    font-weight: 500;
+}
