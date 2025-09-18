@@ -33,17 +33,15 @@
     z-index: 20; /* garante que fique acima dos vídeos */
 }
 
-/* Overlay por cima de todo o banner */
 .banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* vinheta: mais clara no centro e mais escura nas bordas */
     background: radial-gradient(circle, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
-    pointer-events: none; /* permite clicar nos elementos abaixo */
-    z-index: 10; /* garante que fique acima dos vídeos */
+    pointer-events: none; 
+    z-index: 10;
 }
 
 .banner-content {
