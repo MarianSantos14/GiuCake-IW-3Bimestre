@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiuCake | Login</title>
+    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container w-100">
+                <a class="navbar-brand p-0" style="width: 42px;" href="#"><img class="logoGiuCake w-100"
+                        src="../img/logoGiuCake.svg" alt="Logo GiuCake"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carrinho</a>
+                        </li>
+
+                        <!-- botão (mobile) -->
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="#">Faça seu pedido</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="#">Conta</a>
+                        </li>
+                    </ul>
+
+                    <!-- botão (desktop) -->
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="btn btn-destaque rounded-pill py-1 px-3">Faça seu pedido</button>
+                        <a class="personIcon ms-2" href="login.html">
+                            <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="fundoLogin">
+        <!-- 3 faixas de fundo -->
+        <div class="faixa cor1">
+            <img src="../img/donut.png" alt="Cookie" style="width: 200px;">
+        </div>
+        <div class="faixa cor2">
+            <img src="../img/cookie.png" alt="Donut" style="width: 200px;">
+        </div>
+        <div class="faixa cor3">
+            <img src="../img/cupcake.png" alt="Cupcake" style="width: 200px;">
+        </div>
+
+        <!-- Card central -->
+        <div class="login-card m-auto p-5 d-flex flex-column justify-content-center w-lg-100">
+            <h2 class="mb-4 h1 h1-login">Entrar</h2>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                <a href="#"
+                    class="d-flex gap-3 p-2 bg-primary text-white align-items-center justify-content-center text-decoration-none mt-2">
+                    <i class="bi bi-google"></i>
+                    <p class="mb-0">Entrar com Google</p>
+                </a></div>
+                <div class="col-12 col-md-6">
+                    <a href="#"
+                        class="d-flex gap-3 p-2 text-white align-items-center justify-content-center text-decoration-none mt-2"
+                        style="background-color: rgb(52, 52, 183);">
+                        <i class="bi bi-facebook"></i>
+                        <p class="mb-0">Entrar com Facebook</p>
+                    </a>                    
+                </div>
+
+            </div>
+
+            <div class="d-flex align-items-center gap-3 my-4">
+                <div class="line"></div>
+                <p class="m-0">ou</p>
+                <div class="line"></div>
+            </div>
+
+            <form>
+                <div class="row g-3">
+                    <div class="col-12 col-sm-6 col-md-5">
+                        <input type="text" class="form-control" placeholder="nome">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-5">
+                        <input type="text" class="form-control" placeholder="sobrenome">
+                    </div>
+                    <div class="col-12 col-sm-2 col-md-2">
+                        <input type="number" class="form-control" placeholder="idade">
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-7">
+                        <input type="email" class="form-control" placeholder="email">
+                    </div>
+                    <div class="col-12 col-sm-5 col-md-5">
+                        <input type="text" class="form-control" placeholder="cpf">
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-6">
+                        <input type="text" class="form-control" placeholder="cep">
+                    </div>
+                    <div class="col-12 col-sm-8 col-md-6">
+                        <input type="text" class="form-control" placeholder="rua">
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4">
+                        <input type="text" class="form-control" placeholder="pais">
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4">
+                        <input type="text" class="form-control" placeholder="estado">
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-4">
+                        <input type="text" class="form-control" placeholder="cidade">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-danger btn-destaque2 px-4 mt-4">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container py-3">
+            <div class="row gap-4 justify-content-center align-items-start">
+                <div class="col-md-5 mb-3">
+                    <h5>Sobre Nós</h5>
+                    <p>GiuCake é uma confeitaria dedicada a criar doces e salgados deliciosos, feitos com amor e
+                        carinho.</p>
+                    <p class="mt-4 opacity-75">&copy; 2023 GiuCake. Mariana Santos e Eloisa Carvalho</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none link-footer">Home</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Sobre</a></li>
+                        <li><a href="produtos.html" class="text-decoration-none link-footer">Cardápio</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: giucake.doces@gmail.com</p>
+                    <p>Telefone: (15) 9984-62012</p>
+                    <p>Endereço: Rua Aristeu Prestes de Barros, 339, Sorocaba, SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

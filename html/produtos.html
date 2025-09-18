@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GiuCake | Produtos</title>
+    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container w-100">
                 <a class="navbar-brand p-0" style="width: 42px;" href="#"><img class="logoGiuCake w-100"
-                        src="img/logoGiuCake.svg" alt="Logo GiuCake"></a>
+                        src="../img/logoGiuCake.svg" alt="Logo GiuCake"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +30,10 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cardápio</a>
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
@@ -62,234 +63,263 @@
         </nav>
     </header>
 
-    <section class="mb-5 pt-5">
-        <h1 class="text-center my-5">Produtos</h1>
-        <div class="produtos row w-75 m-auto">
-            <a href="produto.html?id=TrufaMaracuja"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/280.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+    <main>
+        <section class="mb-5 pt-5">
+            <h1 class="text-center my-5 h1">Produtos</h1>
+            <div class="produtos row w-75 m-auto">
+                <a href="produto.html?id=TrufaMaracuja"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/280.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=TrufaNinhoNutella"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/282.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa de Ninho & Nutella</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=TrufaNinhoNutella"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/282.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa de Ninho & Nutella</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=BoloPNinho"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/187.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=BoloPNinho"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/187.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=BoloPAmeixa"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/223.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=BoloPAmeixa"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/223.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=BoloPBrigadeiro"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/189.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=BoloPBrigadeiro"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/189.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=BoloPPrestigio"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/188.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=BoloPPrestigio"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/188.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=Banoffe"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/200.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=Banoffe"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/200.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=ConeKinder"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/217.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=ConeKinder"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/217.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=ConeNinhoNutella"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/218.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=ConeNinhoNutella"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/218.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=PaoMel"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/256.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=PaoMel"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/256.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=TulipaStikadinho"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/226.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=TulipaStikadinho"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/226.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=KinderBrownie"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/196.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=KinderBrownie"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/196.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=FatiaHolandesa"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/209.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=FatiaHolandesa"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/209.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=FatiaTresChocolates"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/206.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=FatiaTresChocolates"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/206.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=CestinhaKinderBrownie"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/228.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=CestinhaKinderBrownie"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/228.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=CestinhaNinhoNutella"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/227.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=CestinhaNinhoNutella"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/227.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=CopoBrownieMaracuja"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/276.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=CopoBrownieMaracuja"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/276.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=CopoMorangoff"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/273.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=CopoMorangoff"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/273.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=CopoKinder"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/192.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=CopoKinder"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/192.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="produto.html?id=GelatinaMosaico"
-                class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
-                <img class="circulo" src="img/produtos/194.jpg" alt="">
-                <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                    <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
-                    <div class="d-flex justify-content-between align-items-center gap-2">
-                        <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
-                        <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                </a>
+                <a href="produto.html?id=GelatinaMosaico"
+                    class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-4 col-md-3">
+                    <img class="circulo" src="../img/produtos/194.jpg" alt="">
+                    <div class="card-body d-flex align-items-center justify-content-center flex-column">
+                        <h5 class="card-title" _msttexthash="307684" _msthash="209">Trufa Maracuja</h5>
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <p class="card-text preco-uni" _msttexthash="7212907" _msthash="210">R$ 6,50</p>
+                            <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
+                        </div>
                     </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container py-3">
+            <div class="row gap-4 justify-content-center align-items-start">
+                <div class="col-md-5 mb-3">
+                    <h5>Sobre Nós</h5>
+                    <p>GiuCake é uma confeitaria dedicada a criar doces e salgados deliciosos, feitos com amor e
+                        carinho.</p>
+                    <p class="mt-4 opacity-75">&copy; 2023 GiuCake. Mariana Santos e Eloisa Carvalho</p>
                 </div>
-            </a>
+                <div class="col-md-2 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none link-footer">Home</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Sobre</a></li>
+                        <li><a href="produtos.html" class="text-decoration-none link-footer">Cardápio</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: giucake.doces@gmail.com</p>
+                    <p>Telefone: (15) 9984-62012</p>
+                    <p>Endereço: Rua Aristeu Prestes de Barros, 339, Sorocaba, SP</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </footer>
 
-
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

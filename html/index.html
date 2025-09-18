@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GiuCake | Início</title>
+    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -29,10 +30,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cardápio</a>
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
@@ -53,7 +54,7 @@
                     <!-- botão (desktop) -->
                     <div class="d-none d-lg-flex align-items-center">
                         <button class="btn btn-destaque rounded-pill py-1 px-3">Faça seu pedido</button>
-                        <a class="personIcon ms-2" href="#">
+                        <a class="personIcon ms-2" href="login.html">
                             <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
                         </a>
                     </div>
@@ -87,7 +88,7 @@
             <!-- Conteúdo do banner -->
             <div
                 class="banner-content position-absolute text-center text-white w-100 h-100 d-flex flex-column justify-content-center align-items-center">
-                <h1 class="display-4 fw-bold mb-3">GiuCake</h1>
+                <h1 class="display-4 fw-bold mb-3 h1 text-white">GiuCake</h1>
                 <p class="lead mb-4">Doces e salgados feitos com amor e carinho</p>
                 <button class="btn btn-light rounded-pill py-1 px-3">Faça seu pedido</button>
             </div>
@@ -95,7 +96,7 @@
 
         <section class="produtos p-4">
             <div class="container my-5">
-                <h2 class="text-center mb-4">Nossos Produtos</h2>
+                <h2 class="text-center mb-4 h1">Nossos Produtos</h2>
                 <!-- cards -->
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
@@ -116,7 +117,7 @@
 
                                 <p class="card-text">Massa branca, mousse de Ninho, finalizado com kitkat</p>
 
-                                <p class="card-text preco"><strong>R$ 15,00</strong></p>
+                                <p class="card-text"><strong>R$ 15,00</strong></p>
                             </div>
                         </div>
                     </div>
@@ -124,103 +125,157 @@
             </div>
         </section>
 
-        <section class="mb-5">
-            <h2 class="text-center mb-4">Avaliações</h2>
-            <h1 class="text-center">4,8</h1>
-            <div class="text-center mb-4">
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
-                <i class="bi bi-star-fill text-warning"></i>
+        <h2 class="text-center mb-3 h1">Avaliações</h2>
+        <section class="mb-5 d-flex align-items-center justify-content-center gap-4">
+            <div>
+                <h1 class="text-center">4,8</h1>
+                <div class="text-center">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                </div>
             </div>
 
-            <div class="d-flex align-items-center gap-4 m-auto" style="width: 90%;">
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXjQPrYT7F3E67g9hMY7YtfAe250XUebsaFCkl6q9MeYwAKUNjy=w45-h45-p-rp-mo-ba2-br100"
-                                alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
+            <div id="carouselExample" class="carousel slide" style="width: 27rem;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXjQPrYT7F3E67g9hMY7YtfAe250XUebsaFCkl6q9MeYwAKUNjy=w45-h45-p-rp-mo-ba2-br100"
+                                        alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
 
-                            <h5 class="mb-0 me-auto">Cleberson Ferreira</h5>
+                                    <h5 class="mb-0 me-auto">Cleberson Ferreira</h5>
 
-                            <div>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-secondary"></i>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-secondary"></i>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">Excelente trabalho, ótimos bolos, com ótimo preço, bem acessível.
+                                </p>
                             </div>
                         </div>
-
-                        <p class="card-text">Excelente trabalho, ótimos bolos, com ótimo preço, bem acessível.
-                        </p>
                     </div>
-                </div>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXU1cIca9iyPMc2StHeTr5dD-UAALjxVwx14kZ2RuQ__jWCjIHZCg=w45-h45-p-rp-mo-br100"
-                                alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
+                    <div class="carousel-item">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjXU1cIca9iyPMc2StHeTr5dD-UAALjxVwx14kZ2RuQ__jWCjIHZCg=w45-h45-p-rp-mo-br100"
+                                        alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
 
-                            <h5 class="mb-0 me-auto">Tainá Samira</h5>
+                                    <h5 class="mb-0 me-auto">Tainá Samira</h5>
 
-                            <div>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">Docinhos maravilhosos e ótimo atendimento, produtos muito gostosos,
+                                    amo
+                                    essa loja
+                                </p>
                             </div>
                         </div>
-
-                        <p class="card-text">Docinhos maravilhosos e ótimo atendimento, produtos muito gostosos, amo essa loja
-                        </p>
                     </div>
-                </div>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://lh3.googleusercontent.com/a-/ALV-UjV41jKyi7GRzgYvcaL5b6lZ_Y-4u8uTSk7J-0oldJjlnL36sno4=w45-h45-p-rp-mo-ba3-br100"
-                                alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
+                    <div class="carousel-item">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://lh3.googleusercontent.com/a-/ALV-UjV41jKyi7GRzgYvcaL5b6lZ_Y-4u8uTSk7J-0oldJjlnL36sno4=w45-h45-p-rp-mo-ba3-br100"
+                                        alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
 
-                            <h5 class="mb-0 me-auto">Thiago Luiz</h5>
+                                    <h5 class="mb-0 me-auto">Thiago Luiz</h5>
 
-                            <div>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">Atendimento de primeira, a
+                                    variedade em produtos e serviços é realmente um atrativo.</p>
                             </div>
                         </div>
-
-                        <p class="card-text">Atendimento de primeira, a
-                            variedade em produtos e serviços é realmente um atrativo.</p>
                     </div>
-                </div>
-                <div class="card" style="width: 25rem;">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center mb-3">
-                            <img src="https://lh3.googleusercontent.com/a/ACg8ocKHZp-rlAQQMsnoN2QAHtdFfBHleGbmCWfLYZWgPojYzHfCQg=w45-h45-p-rp-mo-br100"
-                                alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
+                    <div class="carousel-item">
+                        <div class="card" style="width: 25rem;">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <img src="https://lh3.googleusercontent.com/a/ACg8ocKHZp-rlAQQMsnoN2QAHtdFfBHleGbmCWfLYZWgPojYzHfCQg=w45-h45-p-rp-mo-br100"
+                                        alt="Foto do usuário" class="rounded-circle me-2" width="30" height="30">
 
-                            <h5 class="mb-0 me-auto">Matheus Sanches</h5>
+                                    <h5 class="mb-0 me-auto">Matheus Sanches</h5>
 
-                            <div>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
+                                    <div>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                    </div>
+                                </div>
+
+                                <p class="card-text">Loja com os melhores doces que já experimentei!</p>
                             </div>
                         </div>
-
-                        <p class="card-text">Loja com os melhores doces que já experimentei!</p>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </section>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d543.8658266782805!2d-47.36717948920926!3d-23.508083564499287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf6765ca73a023%3A0x151cf76f9dd53eff!2sVan%20Cake!5e0!3m2!1spt-BR!2sbr!4v1758223105957!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <footer>
+            <div class="container py-3">
+                <div class="row gap-4 justify-content-center align-items-start">
+                    <div class="col-md-5 mb-3">
+                        <h5>Sobre Nós</h5>
+                        <p>GiuCake é uma confeitaria dedicada a criar doces e salgados deliciosos, feitos com amor e
+                            carinho.</p>
+                        <p class="mt-4 opacity-75">&copy; 2023 GiuCake. Mariana Santos e Eloisa Carvalho</p>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <h5>Links Rápidos</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-decoration-none link-footer">Home</a></li>
+                            <li><a href="#" class="text-decoration-none link-footer">Sobre</a></li>
+                            <li><a href="produtos.html" class="text-decoration-none link-footer">Cardápio</a></li>
+                            <li><a href="#" class="text-decoration-none link-footer">Contato</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Contato</h5>
+                        <p>Email: giucake.doces@gmail.com</p>
+                        <p>Telefone: (15) 9984-62012</p>
+                        <p>Endereço: Rua Aristeu Prestes de Barros, 339, Sorocaba, SP</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </main>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

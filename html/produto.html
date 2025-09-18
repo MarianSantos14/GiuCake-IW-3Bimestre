@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GiuCake | Produtos</title>
+    <title>GiuCake | Produto</title>
+    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
 </head>
 
 <body>
@@ -17,7 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container w-100">
                 <a class="navbar-brand p-0" style="width: 42px;" href="#"><img class="logoGiuCake w-100"
-                        src="img/logoGiuCake.svg" alt="Logo GiuCake"></a>
+                        src="../img/logoGiuCake.svg" alt="Logo GiuCake"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +30,10 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Cardápio</a>
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
@@ -62,43 +63,44 @@
         </nav>
     </header>
 
-    <section>
-        <div class="fundo-produto">
-            <div class="meio-circulo"></div>
-            <div class="fundo-meio-circulo"></div>
-        </div>
+    <main>
+        <section>
+            <div class="fundo-produto">
+                <div class="meio-circulo"></div>
+                <div class="fundo-meio-circulo"></div>
+            </div>
 
-        <div class="espaco">
-            <div class="d-flex align-items-end justify-content-start produto-header">
-                <p class="preco">R$ <span id="preco"></span></p>
+            <div class="espaco">
+                <div class="d-flex align-items-end justify-content-start produto-header">
+                    <p class="preco">R$ <span id="preco"></span></p>
 
-                <div class="circulo2"></div>
+                    <div class="circulo2 centralizar"></div>
 
-                <div class="carrinho d-flex align-items-center gap-2">
-                    <button class="btn-menos menosMais border-0">-</button>
-                    <div id="numero">1</div>
-                    <button class="btn-mais menosMais border-0">+</button>
+                    <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2">
+                        <button class="btn-menos menosMais border-0">-</button>
+                        <div id="numero">1</div>
+                        <button class="btn-mais menosMais border-0">+</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column align-items-center justify-content-center produto-body mt-3">
+                    <span class="tipo"><span id="tipo"></span></span>
+                    <h1 class="nome"><span id="nome"></span></h1>
+                    <p class="descricao my-3"><span id="descricao"></span></p>
+                    <button class="btn btn-danger btn-destaque rounded-0 px-4" type="submit">Adicionar ao
+                        Carrinho</button>
+
+                    <span class="d-none" id="sabor"></span>
                 </div>
             </div>
-
-            <div class="d-flex flex-column align-items-center justify-content-center produto-body">
-                <span class="tipo"><span id="tipo"></span></span>
-                <h1 class="nome"><span id="nome"></span></h1>
-                <p class="descricao my-3"><span id="descricao"></span></p>
-                <button class="btn btn-danger btn-destaque rounded-0 px-4" type="submit">Adicionar ao Carrinho</button>
-
-                <span class="d-none" id="sabor"></span>
-            </div>
-        </div>
-    </section>
-
-    <a href="index.html" class="btn btn-secondary">Voltar</a>
+        </section>
+    </main>
 
     <script>
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
 
-        fetch("produtos.json")
+        fetch("../produtos.json")
             .then(res => res.json())
             .then(produtos => {
                 const produto = produtos[id];
@@ -108,7 +110,7 @@
                     document.getElementById("sabor").textContent = produto.sabor;
                     document.getElementById("descricao").textContent = produto.descricao;
 
-                    const imgCirculo = document.querySelector(".circulo");
+                    const imgCirculo = document.querySelector(".circulo2");
                     if (imgCirculo && produto.img) {
                         imgCirculo.style.backgroundImage = `url('${produto.img}')`;
                     }
@@ -131,6 +133,7 @@
                         valor = valorUni * num;
                         numero.textContent = num;
                         document.getElementById("preco").textContent = `${valor.toFixed(2).replace('.', ',')}`;
+                        shake()
                     }
                 });
 
@@ -140,15 +143,26 @@
                         valor = valorUni * num;
                         numero.textContent = num;
                         document.getElementById("preco").textContent = `${valor.toFixed(2).replace('.', ',')}`;
+                        shake()
                     }
                 });
+
+                function shake() {
+                    const preco = document.querySelector('.preco');
+                    preco.classList.add('shake');
+
+                    // Remove a classe após a animação para que possa ser reutilizada
+                    setTimeout(() => {
+                        preco.classList.remove('shake');
+                    }, 500); // Duração da animação em milissegundos
+                }
             })
             .catch(err => {
                 console.error("Erro ao carregar JSON:", err);
             });
     </script>
 
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
