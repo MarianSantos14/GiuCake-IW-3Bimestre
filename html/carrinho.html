@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="Pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GiuCake | Carrinho</title>
+    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <style>
+        .product-img {
+            width: 60px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container w-100">
+                <a class="navbar-brand p-0" style="width: 42px;" href="#"><img class="logoGiuCake w-100"
+                        src="../img/logoGiuCake.svg" alt="Logo GiuCake"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse ms-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Carrinho</a>
+                        </li>
+
+                        <!-- botão (mobile) -->
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="#">Faça seu pedido</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="#">Conta</a>
+                        </li>
+                    </ul>
+
+                    <!-- botão (desktop) -->
+                    <div class="d-none d-lg-flex align-items-center">
+                        <button class="btn btn-destaque rounded-pill py-1 px-3">Faça seu pedido</button>
+                        <a class="personIcon ms-2" href="login.html">
+                            <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrinho -->
+    <div class="container my-5 pt-5">
+        <h2 class="mb-4 h1">Seu Carrinho</h2>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="../img/produtos/206.jpg" class="img-fluid rounded-start" style="width: 140px;">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Fatia Três Chocolates</h5>
+                        <button class="btn btn-danger btn-sm">Remover</button></div>
+                        <p class="m-0">Preço: R$ 17,00</p>
+                        <p class="p-0 m-0">Quantidade: 2</p>
+                        <p class="p-0 m-0">Subtotal: R$ 34,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="../img/produtos/223.jpg" class="img-fluid rounded-start" style="width: 140px;">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                        <h5 class="card-title">Gelatina Mosaico</h5>
+                        <button class="btn btn-danger btn-sm">Remover</button></div>
+                        <p class="m-0">Preço: R$ 9,00</p>
+                        <p class="p-0 m-0">Quantidade: 1</p>
+                        <p class="p-0 m-0">Subtotal: R$ 9,00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <table class="table align-middle">
+            <thead class="">
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Subtotal</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <tr>
+                    <td class="w-50">
+                        <div class="d-flex align-items-center">
+                            <img src="../img/produtos/206.jpg" class="product-img me-3" alt="Cupcake">
+                            <div>
+                                <strong>Fatia Três Chocolates</strong><br>
+                                <small>Base assada, brigadeiro ao leite, creme de chocolate branco.</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$ 17,00</td>
+                    <td>
+                        <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
+                            <button class="btn-menos menosMais border-0">-</button>
+                            <div id="numero">2</div>
+                            <button class="btn-mais menosMais border-0">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">R$ 34,00</td>
+                    <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <img src="../img/produtos/194.jpg" class="product-img me-3" alt="Bolo">
+                            <div>
+                                <strong></strong><br>
+                                <small>Gelatina com creme de leite condensado</small>
+                            </div>
+                        </div>
+                    </td>
+                    <td>R$ 9,00</td>
+                    <td>
+                        <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
+                            <button class="btn-menos menosMais border-0">-</button>
+                            <div id="numero">1</div>
+                            <button class="btn-mais menosMais border-0">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">R$ 9,00</td>
+                    <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Total -->
+        <div class="text-end">
+            <h4>Total: <span id="total">R$ 43,00</span></h4>
+            <button class="btn btn-success mt-3">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container py-3">
+            <div class="row gap-4 justify-content-center align-items-start">
+                <div class="col-md-5 mb-3">
+                    <h5>Sobre Nós</h5>
+                    <p>GiuCake é uma confeitaria dedicada a criar doces e salgados deliciosos, feitos com amor e
+                        carinho.</p>
+                    <p class="mt-4 opacity-75">&copy; 2023 GiuCake. Mariana Santos e Eloisa Carvalho</p>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none link-footer">Home</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Sobre</a></li>
+                        <li><a href="produtos.html" class="text-decoration-none link-footer">Cardápio</a></li>
+                        <li><a href="#" class="text-decoration-none link-footer">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: giucake.doces@gmail.com</p>
+                    <p>Telefone: (15) 9984-62012</p>
+                    <p>Endereço: Rua Aristeu Prestes de Barros, 339, Sorocaba, SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de Cálculo -->
+    <!-- <script>
+        function updateSubtotal(input) {
+            const row = input.closest('tr');
+            const price = parseFloat(row.cells[1].textContent.replace('R$', '').replace(',', '.'));
+            const quantity = parseInt(input.value);
+            const subtotal = price * quantity;
+            row.querySelector('.subtotal').textContent = 'R$ ' + subtotal.toFixed(2).replace('.', ',');
+            updateTotal();
+        }
+
+        function updateTotal() {
+            let total = 0;
+            document.querySelectorAll('.subtotal').forEach(cell => {
+                total += parseFloat(cell.textContent.replace('R$', '').replace(',', '.'));
+            });
+            document.getElementById('total').textContent = 'R$ ' + total.toFixed(2).replace('.', ',');
+        }
+
+        function removeItem(button) {
+            const row = button.closest('tr');
+            row.remove();
+            updateTotal();
+        }
+    </script> -->
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

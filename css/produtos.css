@@ -9,13 +9,3 @@
     ;
 }
 
-.produtos>a {
-    text-align: center;
-    scale: 1;
-    transition: scale .3s ease;
-}
-
-.produtos>a:hover {
-    scale: 1.02;
-    transition: scale .3s ease;
-}
