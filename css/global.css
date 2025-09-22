@@ -19,6 +19,18 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* chack */
+#modo-noturno.form-check-input:checked {
+  background-color: #D42D66;
+  border-color: #D42D66;
+}
+
+#modo-noturno.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem #d42d65a5;
+  border-color: #D42D66;
+}
+
+
 .cor-destaque {
     color: var(--cor-destaque);
 }

@@ -45,20 +45,26 @@
 
                         <!-- botão (mobile) -->
                         <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="#">Faça seu pedido</a>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="#">Conta</a>
+                            <a class="nav-link" href="login.html">Conta</a>
                         </li>
                     </ul>
 
                     <!-- botão (desktop) -->
-                    <div class="d-none d-lg-flex align-items-center">
-                        <button class="btn btn-destaque rounded-pill py-1 px-3">Faça seu pedido</button>
-                        <a class="personIcon ms-2" href="#">
-                            <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
-                        </a>
-                    </div>
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-start align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                <label id="nomeDoModo" class="form-check-label" for="modo-noturno">Modo claro</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item d-none d-lg-block">
+                            <a class="personIcon" href="login.html">
+                                <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -67,12 +73,11 @@
     <!-- Nossa História -->
     <section class="py-5 mt-5">
         <div class="container">
-
             <h2 class="text-center mb-4 h1">Nossa História</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content bg-body-tertiary">
                         <h5 class="h5" class="h5">2010 – O Começo  <i class="bi bi-stars" style="color: rgb(255, 219, 101);"></i></h5>
                         <p>Vanessa, enfermeira na Unimed, começou vendendo bolos de pote para os colegas de trabalho. O
                             sucesso foi imediato.</p>
@@ -80,7 +85,7 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content bg-body-tertiary">
                         <h5 class="h5">2013 – Crescimento <i class="bi bi-cake-fill" style="color: rgb(239, 163, 176)"></i></h5>
                         <p>Os pedidos aumentaram e novas receitas entraram no cardápio: tortas, doces de festa e
                             sobremesas
@@ -89,7 +94,7 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content bg-body-tertiary">
                         <h5 class="h5">2019 – A Virada <i class="bi bi-balloon-fill" style="color:rgb(197, 0, 0)"></i></h5>
                         <p>Após quase 10 anos conciliando duas profissões, Vanessa decidiu largar a enfermagem e abrir
                             oficialmente a loja Giucake.</p>
@@ -97,7 +102,7 @@
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-content">
+                    <div class="timeline-content bg-body-tertiary">
                         <h5 class="h5">Hoje – Tradição e Amor <i class="bi bi-heart-fill" style="color:brown"></i></h5>
                         <p>A Giucake é um espaço acolhedor onde cada doce é feito com carinho, mantendo a mesma essência
                             dos
@@ -110,7 +115,7 @@
     </section>
 
     <!-- Missão, Visão, Valores -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-body-tertiary">
         <div class="container">
             <h2 class="text-center mb-4 h1">Visão, Missão e Valores</h2>
             <div class="row text-center gap-2 justify-content-center mx-auto">
@@ -139,7 +144,7 @@
     </section>
 
     <!-- Call to Action -->
-    <section class="py-5 bg-light text-center">
+    <section class="py-5 text-center">
         <div class="container">
             <h2 class="h1">Venha conhecer a Giucake</h2>
             <p class="lead">Descubra o doce sabor de cada momento especial.</p>
@@ -176,6 +181,7 @@
     </footer>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/modoDark.js"></script>
 </body>
 
 </html>

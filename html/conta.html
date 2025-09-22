@@ -36,28 +36,34 @@
                             <a class="nav-link" href="produtos.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contato</a>
+                            <a class="nav-link" href="contato.html">Contato</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Carrinho</a>
+                            <a class="nav-link" href="carrinho.html">Carrinho</a>
                         </li>
 
                         <!-- botão (mobile) -->
                         <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="#">Faça seu pedido</a>
-                        </li>
-                        <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="login.html">Conta</a>
+                            <a class="nav-link active" aria-current="page" href="#">Conta</a>
                         </li>
                     </ul>
 
                     <!-- botão (desktop) -->
-                    <div class="d-none d-lg-flex align-items-center">
-                        <button class="btn btn-destaque rounded-pill py-1 px-3">Faça seu pedido</button>
-                        <a class="personIcon ms-2 activeIcon" href="login.html">
-                            <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
-                        </a>
-                    </div>
+                    <ul class="navbar-nav mb-2 mb-lg-0 text-start align-items-lg-center">
+                        <li class="nav-item">
+                            <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                <label id="nomeDoModo" class="form-check-label" for="modo-noturno">Modo claro</label>
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item nav-item d-none d-lg-block activeIcon">
+                            <a class="personIcon" aria-current="page" href="#">
+                                <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -65,7 +71,6 @@
 
     <main class="container my-5 pt-5">
         <h2 class="text-center mb-4 h1 col-12">Olá, Julia</h2>
-
         <div class="row g-4">
             <!-- Perfil -->
             <div class="col-lg-4">
@@ -121,15 +126,15 @@
                     <div class="card-body">
                         <h6 class="fw-bold">Endereço de Entrega</h6>
                         <p>Rua das Flores, 123 - São Paulo/SP</p>
-                        <button class="btn btn-destaque" data-bs-toggle="modal"
-                            data-bs-target="#modalEndereco">Editar Endereço</button>
+                        <button class="btn btn-destaque" data-bs-toggle="modal" data-bs-target="#modalEndereco">Editar
+                            Endereço</button>
 
                         <hr>
 
                         <h6 class="fw-bold">Forma de Pagamento</h6>
                         <p>Cartão de Crédito - final 1234</p>
-                        <button class="btn btn-destaque" data-bs-toggle="modal"
-                            data-bs-target="#modalPagamento">Editar Pagamento</button>
+                        <button class="btn btn-destaque" data-bs-toggle="modal" data-bs-target="#modalPagamento">Editar
+                            Pagamento</button>
                     </div>
                 </div>
             </div>
@@ -262,6 +267,7 @@
             }
         });
     </script>
+    <script src="../js/modoDark.js"></script>
 </body>
 
 </html>

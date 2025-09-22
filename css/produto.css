@@ -1,3 +1,17 @@
+
+
+
+
+:root {
+    --cor-forte: #ffbccd;
+    --cor-fraca: #ffbccdb7;
+}
+
+[data-bs-theme="dark"] {
+    --cor-forte: #D42D66;
+    --cor-fraca: #d42d65d0;
+}
+
 body {
     max-height: 100vh;
 }
@@ -14,14 +28,14 @@ body {
     position: absolute;
     width: 100%;
     height: 30vh;
-    background-color: #FCCCD8;
+    background-color: var(--cor-forte);
 }
 
 .fundo-meio-circulo {
     display: flex;
     width: 100%;
     height: 380px;
-    background-color: #FFEBF0;
+    background-color: var(--cor-fraca);
 }
 
 .produto-header {
