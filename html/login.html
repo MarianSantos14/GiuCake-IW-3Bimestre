@@ -70,7 +70,7 @@
     </header>
 
     <main class="pt-5">
-        <div class="fundoRosa d-flex align-items-center justify-content-center py-md-5">
+        <div class="fundoRosa d-flex align-items-center justify-content-center py-md-5" style="min-height: 90vh;">
             <div class="login-card bg-body-tertiary">
                 <h2 class="mb-4 h1 h1-login">Entrar</h2>
                 <div class="row">
@@ -98,40 +98,84 @@
                     <div class="line"></div>
                 </div>
 
-                <form>
+                <form class="needs-validation" novalidate>
                     <div class="row g-3">
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <input type="text" class="form-control" placeholder="nome">
+                        <!-- Nome -->
+                        <div class="col-12 col-md-6 col-lg-5 text-start">
+                            <label for="nome" class="form-label fs-5">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" minlength="3" maxlength="15" required>
+                            <div class="invalid-feedback">Por favor, insira seu nome.</div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-5">
-                            <input type="text" class="form-control" placeholder="sobrenome">
+
+                        <!-- Sobrenome -->
+                        <div class="col-12 col-md-6 col-lg-5 text-start">
+                            <label for="sobrenome" class="form-label fs-5">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" minlength="3" maxlength="15" required>
+                            <div class="invalid-feedback">Por favor, insira seu sobrenome.</div>
                         </div>
-                        <div class="col-12 col-md-2 col-lg-2">
-                            <input type="number" class="form-control" placeholder="idade">
+
+                        <!-- Idade -->
+                        <div class="col-12 col-md-2 col-lg-2 text-start">
+                            <label for="idade" class="form-label fs-5">Idade</label>
+                            <input type="number" class="form-control" id="idade" placeholder="Idade" min="1" max="100"
+                                required>
+                            <div class="invalid-feedback">Insira uma idade válida.</div>
                         </div>
-                        <div class="col-12 col-md-5 col-lg-7">
-                            <input type="email" class="form-control" placeholder="email">
+
+                        <!-- Email -->
+                        <div class="col-12 col-md-5 col-lg-7 text-start">
+                            <label for="email" class="form-label fs-5">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
+                                required>
+                            <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
                         </div>
-                        <div class="col-12 col-md-5 col-lg-5">
-                            <input type="text" class="form-control" placeholder="cpf">
+
+                        <div class="col-12 col-md-5 col-lg-5 text-start">
+                            <label for="cpf" class="form-label fs-5">CPF</label>
+                            <input type="text" class="form-control" id="cpf" placeholder="000.000.000-00" required>
+                            <div class="invalid-feedback">Por favor, insira um CPF válido.</div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <input type="text" class="form-control" placeholder="cep">
+
+                        <!-- CEP -->
+                        <div class="col-12 col-md-4 col-lg-6 text-start">
+                            <label for="cep" class="form-label fs-5">CEP</label>
+                            <input type="text" class="form-control" id="cep" placeholder="00000-000"
+                                pattern="\d{5}-\d{3}" required>
+                            <div class="invalid-feedback">Por favor, insira um CEP válido (xxxxx-xxx).</div>
                         </div>
-                        <div class="col-12 col-md-8 col-lg-6">
-                            <input type="text" class="form-control" placeholder="rua">
+
+                        <!-- Rua -->
+                        <div class="col-12 col-md-8 col-lg-6 text-start">
+                            <label for="rua" class="form-label fs-5">Rua</label>
+                            <input type="text" class="form-control" id="rua" placeholder="Rua" required>
+                            <div class="invalid-feedback">Por favor, insira o nome da rua.</div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
-                            <input type="text" class="form-control" placeholder="pais">
+
+                        <!-- País -->
+                        <div class="col-12 col-md-4 col-lg-4 text-start">
+                            <label for="pais" class="form-label fs-5">País</label>
+                            <input type="text" class="form-control" id="pais" placeholder="País" required>
+                            <div class="invalid-feedback">Por favor, insira o país.</div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
-                            <input type="text" class="form-control" placeholder="estado">
+
+                        <!-- Estado -->
+                        <div class="col-12 col-md-4 col-lg-4 text-start">
+                            <label for="estado" class="form-label fs-5">Estado</label>
+                            <input type="text" class="form-control" id="estado" placeholder="Estado" required>
+                            <div class="invalid-feedback">Por favor, insira o estado.</div>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-4">
-                            <input type="text" class="form-control" placeholder="cidade">
+
+                        <!-- Cidade -->
+                        <div class="col-12 col-md-4 col-lg-4 text-start">
+                            <label for="cidade" class="form-label fs-5">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                            <div class="invalid-feedback">Por favor, insira a cidade.</div>
                         </div>
                     </div>
-                    <a href="conta.html" type="submit" class="btn btn-danger btn-destaque2 px-4 mt-4">Entrar</a>
+
+                    <!-- Botão -->
+                    <button type="submit" class="btn btn-danger btn-destaque2 px-4 mt-4 me-3">Entrar</button>
+                    <a href="conta.html" class="btn btn-danger btn-destaque px-4 mt-4">Conta</a>
                 </form>
             </div>
         </div>
@@ -164,6 +208,52 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        (() => {
+            'use strict'
+
+            const form = document.querySelector('.needs-validation');
+            const cpfInput = document.getElementById('cpf');
+
+            // Função para validar CPF
+            function validarCPF(cpf) {
+                cpf = cpf.replace(/\D/g, '');
+                if (cpf.length !== 11 || /^(\d)\1+$/.test(cpf)) return false;
+
+                let soma = 0;
+                for (let i = 0; i < 9; i++) soma += parseInt(cpf.charAt(i)) * (10 - i);
+                let resto = (soma * 10) % 11;
+                if (resto === 10) resto = 0;
+                if (resto !== parseInt(cpf.charAt(9))) return false;
+
+                soma = 0;
+                for (let i = 0; i < 10; i++) soma += parseInt(cpf.charAt(i)) * (11 - i);
+                resto = (soma * 10) % 11;
+                if (resto === 10) resto = 0;
+                if (resto !== parseInt(cpf.charAt(10))) return false;
+
+                return true;
+            }
+
+            form.addEventListener('submit', e => {
+                if (!validarCPF(cpfInput.value)) {
+                    cpfInput.classList.add('is-invalid');
+                    e.preventDefault();
+                    e.stopPropagation();
+                } else {
+                    cpfInput.classList.remove('is-invalid');
+                    cpfInput.classList.add('is-valid');
+                }
+
+                if (!form.checkValidity()) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+        })();
+    </script>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/modoDark.js"></script>

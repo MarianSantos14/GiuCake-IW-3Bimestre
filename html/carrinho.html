@@ -21,7 +21,7 @@
     </style>
 </head>
 
-<body>
+<body class="page-wrapper d-flex flex-column">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container w-100">
@@ -60,7 +60,8 @@
                     <ul class="navbar-nav mb-2 mb-lg-0 text-start align-items-lg-center">
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2" href="#">
-                                <label id="nomeDoModo" class="form-check-label" for="modo-noturno">Modo claro</label>
+                                <label id="nomeDoModo" class="form-check-label" for="modo-noturno">Modo
+                                    claro</label>
                                 <div class="form-check form-switch">
                                     <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
                                 </div>
@@ -78,108 +79,113 @@
     </header>
 
     <!-- Carrinho -->
-    <div class="container my-5 pt-5">
+    <main class="container my-5 pt-5 d-flex flex-column justify-content-center" style="min-height: 80vh;">
         <h2 class="mb-4 h1">Seu Carrinho</h2>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-3">
-                    <img src="../img/produtos/206.jpg" class="img-fluid rounded-start" style="width: 140px;">
-                </div>
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
+        <div class="d-md-none">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="../img/produtos/206.jpg" class="img-fluid rounded-start"
+                            style="width: 100%; height: 154px;">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body fs-5">
                             <h5 class="card-title">Fatia Três Chocolates</h5>
-                            <button class="btn btn-danger btn-sm">Remover</button>
+                            <p class="m-0">Preço: R$ 17,00</p>
+                            <p class="p-0 m-0">Quantidade: 2</p>
+                            <p class="p-0 m-0">Subtotal: R$ 34,00</p>
                         </div>
-                        <p class="m-0">Preço: R$ 17,00</p>
-                        <p class="p-0 m-0">Quantidade: 2</p>
-                        <p class="p-0 m-0">Subtotal: R$ 34,00</p>
                     </div>
+                    <button class="btn btn-danger btn-sm">Remover</button>
                 </div>
             </div>
-        </div>
-        <div class="card mb-3" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-3">
-                    <img src="../img/produtos/223.jpg" class="img-fluid rounded-start" style="width: 140px;">
-                </div>
-                <div class="col-md-9">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between">
+
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="../img/produtos/223.jpg" class="img-fluid rounded-start"
+                            style="width: 100%; height: 154px;">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body fs-5">
                             <h5 class="card-title">Gelatina Mosaico</h5>
-                            <button class="btn btn-danger btn-sm">Remover</button>
+
+                            <p class="m-0">Preço: R$ 9,00</p>
+                            <p class="p-0 m-0">Quantidade: 1</p>
+                            <p class="p-0 m-0">Subtotal: R$ 9,00</p>
                         </div>
-                        <p class="m-0">Preço: R$ 9,00</p>
-                        <p class="p-0 m-0">Quantidade: 1</p>
-                        <p class="p-0 m-0">Subtotal: R$ 9,00</p>
                     </div>
+                    <button class="btn btn-danger btn-sm">Remover</button>
                 </div>
             </div>
         </div>
-        <table class="table align-middle">
-            <thead class="">
-                <tr>
-                    <th>Produto</th>
-                    <th>Preço</th>
-                    <th>Quantidade</th>
-                    <th>Subtotal</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="cart-body">
-                <tr>
-                    <td class="w-50">
-                        <div class="d-flex align-items-center">
-                            <img src="../img/produtos/206.jpg" class="product-img me-3" alt="Cupcake">
-                            <div>
-                                <strong>Fatia Três Chocolates</strong><br>
-                                <small>Base assada, brigadeiro ao leite, creme de chocolate branco.</small>
+
+        <div class="d-none d-md-block">
+            <table class="table align-middle">
+                <thead class="">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody class="" id="cart-body">
+                    <tr>
+                        <td class="w-50">
+                            <div class="d-flex align-items-center">
+                                <img src="../img/produtos/206.jpg" class="product-img me-3" alt="Cupcake">
+                                <div>
+                                    <strong>Fatia Três Chocolates</strong><br>
+                                    <small>Base assada, brigadeiro ao leite, creme de chocolate branco.</small>
+                                </div>
                             </div>
-                        </div>
-                    </td>
-                    <td>R$ 17,00</td>
-                    <td>
-                        <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
-                            <button class="btn-menos menosMais border-0">-</button>
-                            <div id="numero">2</div>
-                            <button class="btn-mais menosMais border-0">+</button>
-                        </div>
-                    </td>
-                    <td class="subtotal">R$ 34,00</td>
-                    <td><button class="btn btn-danger btn-sm">Remover</button></td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="../img/produtos/194.jpg" class="product-img me-3" alt="Bolo">
-                            <div>
-                                <strong></strong><br>
-                                <small>Gelatina com creme de leite condensado</small>
+                        </td>
+                        <td>R$ 17,00</td>
+                        <td>
+                            <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
+                                <button class="btn-menos menosMais border-0">-</button>
+                                <div id="numero">2</div>
+                                <button class="btn-mais menosMais border-0">+</button>
                             </div>
-                        </div>
-                    </td>
-                    <td>R$ 9,00</td>
-                    <td>
-                        <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
-                            <button class="btn-menos menosMais border-0">-</button>
-                            <div id="numero">1</div>
-                            <button class="btn-mais menosMais border-0">+</button>
-                        </div>
-                    </td>
-                    <td class="subtotal">R$ 9,00</td>
-                    <td><button class="btn btn-danger btn-sm">Remover</button></td>
-                </tr>
-            </tbody>
-        </table>
+                        </td>
+                        <td class="subtotal">R$ 34,00</td>
+                        <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <img src="../img/produtos/194.jpg" class="product-img me-3" alt="Bolo">
+                                <div>
+                                    <strong></strong><br>
+                                    <small>Gelatina com creme de leite condensado</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>R$ 9,00</td>
+                        <td>
+                            <div class="carrinho d-flex align-items-center gap-2 centralizar2 pb-2 ms-5 ps-3">
+                                <button class="btn-menos menosMais border-0">-</button>
+                                <div id="numero">1</div>
+                                <button class="btn-mais menosMais border-0">+</button>
+                            </div>
+                        </td>
+                        <td class="subtotal">R$ 9,00</td>
+                        <td><button class="btn btn-danger btn-sm">Remover</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!-- Total -->
         <div class="text-end">
             <h4>Total: <span id="total">R$ 43,00</span></h4>
             <button class="btn btn-success mt-3">Finalizar Compra</button>
         </div>
-    </div>
+    </main>
 
-    <footer>
+    <footer class="d-flex align-items-end justify-content-center">
         <div class="container py-3">
             <div class="row gap-4 justify-content-center align-items-start">
                 <div class="col-md-5 mb-3">
@@ -206,32 +212,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- Script de Cálculo -->
-    <!-- <script>
-        function updateSubtotal(input) {
-            const row = input.closest('tr');
-            const price = parseFloat(row.cells[1].textContent.replace('R$', '').replace(',', '.'));
-            const quantity = parseInt(input.value);
-            const subtotal = price * quantity;
-            row.querySelector('.subtotal').textContent = 'R$ ' + subtotal.toFixed(2).replace('.', ',');
-            updateTotal();
-        }
-
-        function updateTotal() {
-            let total = 0;
-            document.querySelectorAll('.subtotal').forEach(cell => {
-                total += parseFloat(cell.textContent.replace('R$', '').replace(',', '.'));
-            });
-            document.getElementById('total').textContent = 'R$ ' + total.toFixed(2).replace('.', ',');
-        }
-
-        function removeItem(button) {
-            const row = button.closest('tr');
-            row.remove();
-            updateTotal();
-        }
-    </script> -->
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/modoDark.js"></script>

@@ -1,7 +1,3 @@
-
-
-
-
 :root {
     --cor-forte: #ffbccd;
     --cor-fraca: #ffbccdb7;
@@ -27,24 +23,31 @@ body {
 .meio-circulo {
     position: absolute;
     width: 100%;
-    height: 30vh;
+    height: 300px;
     background-color: var(--cor-forte);
 }
 
 .fundo-meio-circulo {
     display: flex;
     width: 100%;
-    height: 380px;
+    height: 450px;
     background-color: var(--cor-fraca);
 }
 
 .produto-header {
     position: absolute;
     z-index: 1;
-    top: 20%;
+    top: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.produto-body {
+    position: absolute;
+    top: 500px;
+    width: 350px;
+    text-align: center;
 }
 
 .circulo2 {
@@ -71,15 +74,6 @@ body {
     font-weight: bold;
     background-color: var(--cor-destaque);
     border-radius: 50%;
-}
-
-.produto-body {
-    position: absolute;
-    top: 450px;
-    width: 400px;
-    text-align: center;
-    /* left: 50%;
-            transform: translateX(-50%); */
 }
 
 .espaco {

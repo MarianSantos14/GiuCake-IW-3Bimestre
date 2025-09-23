@@ -12,6 +12,14 @@
     --cor-destaque-hover: #bd1d55;
 }
 
+.bg-btn-destaque {
+    background-color: white;
+}
+
+.bg-btn-destaque:hover {
+    background-color: rgb(239, 239, 239);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +37,6 @@
   box-shadow: 0 0 0 0.25rem #d42d65a5;
   border-color: #D42D66;
 }
-
 
 .cor-destaque {
     color: var(--cor-destaque);
@@ -132,4 +139,18 @@ footer {
 .produtos>a:hover {
     scale: 1.02;
     transition: scale .3s ease;
+}
+
+
+/* ! tela inteira */
+.page-wrapper {
+    min-height: 90vh;
+    /* faz com que o conteúdo ocupe a altura total da tela */
+    display: flex;
+    flex-direction: column;
+}
+
+.page-wrapper>.flex-grow-1 {
+    flex: 1;
+    /* o conteúdo se expande até empurrar o footer */
 }

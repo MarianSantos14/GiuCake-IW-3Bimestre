@@ -52,7 +52,8 @@
 }
 
 .banner-content h1 {
-    font-size: 3rem;
+    font-size: clamp(2rem, 24vw, 400px);
+    font-family: 'Fredoka', sans-serif;
 }
 
 .banner-content p {
@@ -66,7 +67,7 @@
 }
 
 .produtos {
-    margin-top: 100vh;
+    margin-top: 750px;
 }
 
 .preco {
@@ -74,7 +75,11 @@
 }
 
 
-.carousel-control-prev-icon,
-.carousel-control-next {
-    filter: invert(1);
+
+
+@media screen and (max-width: 992px) {
+
+    .banner-video-wrapper:nth-of-type(2) {
+        width: 100%;
+    }
 }
