@@ -10,7 +10,7 @@
     "TrufaNinhoNutella": {
         "nome": "Trufa Ninho & Nutella",
         "tipo": "Trufa",
-        "sabor": "Ninho & Nutella",
+        "sabor": "Ninho",
         "preco": "6.00",
         "descricao": "Chocolate nobre recheado com brigadeiro de leite Ninho e Nutella",
         "img": "../img/produtos/282.jpg"
@@ -34,7 +34,7 @@
     "BoloPBrigadeiro": {
         "nome": "Bolo Pote Brigadeiro",
         "tipo": "Bolo de Pote",
-        "sabor": "Brigadeiro",
+        "sabor": "Chocolate",
         "preco": "10.00",
         "descricao": "Massa de chocolate, brigadeiro ao leite, finalizado com granulado",
         "img": "../img/produtos/189.jpg"
@@ -49,7 +49,7 @@
     },
     "Banoffe": {
         "nome": "Banoffe",
-        "tipo": "Torta no Pote",
+        "tipo": "Bolo de Pote",
         "sabor": "Banana",
         "preco": "10.00",
         "descricao": "Base de bolacha amanteigada, bananas picadas, canela, finalizado com chantilly",
@@ -66,18 +66,10 @@
     "ConeNinhoNutella": {
         "nome": "Cone Ninho com Nutella",
         "tipo": "Cone Gourmet",
-        "sabor": "Ninho/Nutella",
+        "sabor": "Ninho",
         "preco": "10.00",
         "descricao": "Casquinha de sorvete banhada no chocolate branco, recheada de brigadeiro de ninho com Nutella",
         "img": "../img/produtos/218.jpg"
-    },
-    "CoxinhaPistacheMorango": {
-        "nome": "Coxinha Pistache & Morango",
-        "tipo": "Camafeu",
-        "sabor": "Pistache & Morango",
-        "preco": "12.00",
-        "descricao": "Brigadeiro de Pistache com morango fresco",
-        "img": "../img/produtos/279.jpg"
     },
     "PaoMel": {
         "nome": "Pão de Mel",
@@ -103,17 +95,9 @@
         "descricao": "Creme de Kinder branco, creme de Kinder ao leite, finalizado com pedaços de Brownie e Kinder Bueno",
         "img": "../img/produtos/196.jpg"
     },
-    "KinderMorango": {
-        "nome": "Kinder Supreme - Morango",
-        "tipo": "Kinder Supreme",
-        "sabor": "Morango",
-        "preco": "10.00",
-        "descricao": "Creme de Kinder Branco, creme de Kinder ao leite, finalizado com morangos picados e Kinder Bueno",
-        "img": "../img/produtos/195.jpg"
-    },
     "FatiaHolandesa": {
         "nome": "Fatia Holandesa",
-        "tipo": "Fatia Torta",
+        "tipo": "Bolo de Pote",
         "sabor": "Chocolate",
         "preco": "16.00",
         "descricao": "Base de bolacha amanteigada, creme holandês finalizada com ganache de chocolate ao leite",
@@ -121,7 +105,7 @@
     },
     "FatiaTresChocolates": {
         "nome": "Fatia Três Chocolates",
-        "tipo": "Fatia Torta",
+        "tipo": "Bolo de Pote",
         "sabor": "Chocolate",
         "preco": "17.00",
         "descricao": "Base assada, brigadeiro ao leite, creme de chocolate branco, trufado ao leite, finalizado com morangos picados",
@@ -138,7 +122,7 @@
     "CestinhaNinhoNutella": {
         "nome": "Cestinha Ninho com Nutella",
         "tipo": "Casquinha Trufada",
-        "sabor": "Ninho/Nutella",
+        "sabor": "Ninho",
         "preco": "17.00",
         "descricao": "Cestinha de sorvete banhada no chocolate, brigadeiro de Ninho e Nutella",
         "img": "../img/produtos/227.jpg"
@@ -146,7 +130,7 @@
     "CopoBrownieMaracuja": {
         "nome": "Copo Brownie & Maracujá",
         "tipo": "Copo da Felicidade",
-        "sabor": "Brownie & Maracujá",
+        "sabor": "Maracujá",
         "preco": "19.00",
         "descricao": "Brigadeiro 50% cacau, pedaços de brownie, mousse de maracujá feito com a fruta",
         "img": "../img/produtos/276.jpg"
@@ -174,73 +158,5 @@
         "preco": "9.00",
         "descricao": "Gelatina com creme de leite condensado",
         "img": "../img/produtos/194.jpg"
-    },
-    "Acaitradicional": {
-        "nome": "Açaí Tradicional",
-        "tipo": "Açaí",
-        "sabor": "",
-        "acompanhamentos": [
-            "Amendoim",
-            "Banana",
-            "Chocoball",
-            "Confete",
-            "Granola",
-            "Leite condensado",
-            "Leite Ninho",
-            "Manga",
-            "Morango",
-            "Paçoca",
-            "Sucrilhos"
-        ],
-        "adicional": [
-            "Kiktat + R$ 2.50",
-            "Nutella + R$ 4.00",
-            "Ouro Branco + R$ 2.50",
-            "Ovomaltine + R$ 2.00",
-            "Stikadinho + R$ 2.00"
-        ],
-        "preco": "17.00 a 20.00",
-        "descricao": "",
-        "img": "../"
-    },
-    "AcaiKinder": {
-        "nome": "Açaí Kinder",
-        "tipo": "Açaí Gourmet",
-        "sabor": "",
-        "acompanhamentos": [
-            "Banana",
-            "Manga",
-            "Morango"
-        ],
-        "adicional": [
-            "Kiktat + R$ 2.50",
-            "Nutella + R$ 4.00",
-            "Ouro Branco + R$ 2.50",
-            "Ovomaltine + R$ 2.00",
-            "Stikadinho + R$ 2.00"
-        ],
-        "preco": "21.00 a 24.00",
-        "descricao": "Açaí com creme de Kinder, pedaços de brownie, e fruta da sua preferência",
-        "img": "../img/produtos/258.jpg"
-    },
-    "AcaiSensacao": {
-        "nome": "Açaí Sensação",
-        "tipo": "Açaí Gourmet",
-        "sabor": "",
-        "acompanhamentos": [
-            "Banana",
-            "Manga",
-            "Morango"
-        ],
-        "adicional": [
-            "Kiktat + R$ 2.50",
-            "Nutella + R$ 4.00",
-            "Ouro Branco + R$ 2.50",
-            "Ovomaltine + R$ 2.00",
-            "Stikadinho + R$ 2.00"
-        ],
-        "preco": "21,00 a 24,00",
-        "descricao": "Açaí, brigadeiro de morango, Nuttela e fruta da sua preferência",
-        "img": "../img/produtos/261.jpg"
     }
 }

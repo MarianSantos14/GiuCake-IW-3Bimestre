@@ -4,13 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GiuCake | Produtos</title>
+    <title>GiuCake | Login</title>
     <link rel="icon" href="../img/icon.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="../css/global.css">
+
+    <style>
+        span {
+            color: rgb(210, 1, 1);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -33,7 +40,7 @@
                             <a class="nav-link" href="sobre.html">Sobre</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
+                            <a class="nav-link" href="produtos.html">Cardápio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contato.html">Contato</a>
@@ -44,7 +51,7 @@
 
                         <!-- botão (mobile) -->
                         <li class="nav-item d-lg-none">
-                            <a class="nav-link" href="login.html">Conta</a>
+                            <a class="nav-link active" aria-current="page" href="#">Conta</a>
                         </li>
                     </ul>
 
@@ -58,8 +65,8 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="nav-item nav-item d-none d-lg-block">
-                            <a class="personIcon" href="login.html">
+                        <li class="nav-item nav-item d-none d-lg-block activeIcon">
+                            <a class="personIcon active" aria-current="page" href="#">
                                 <i class="bi bi-person-circle person-circle personIcon" style="font-size: 32px;"></i>
                             </a>
                         </li>
@@ -69,59 +76,67 @@
         </nav>
     </header>
 
-    <div id="carouselExample" class="carousel slide mt-5">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/salgado1.jpg');">
+    <main class="pt-5">
+        <div class="fundoRosa d-flex align-items-center justify-content-center py-md-5" style="min-height: 90vh;">
+            <div class="login-card bg-body-tertiary">
+                <h2 class="mb-4 h1 h1-login">Entrar</h2>
+                <div class="row mx-auto" style="max-width: 90%">
+                    <div class="col-12 col-md-6">
+                        <a href="#"
+                            class="d-flex gap-3 p-2 bg-primary text-white align-items-center justify-content-center text-decoration-none mt-2">
+                            <i class="bi bi-google"></i>
+                            <p class="mb-0">Entrar com Google</p>
+                        </a>
                     </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce7.jpg');">
+                    <div class="col-12 col-md-6">
+                        <a href="#"
+                            class="d-flex gap-3 p-2 text-white align-items-center justify-content-center text-decoration-none mt-2"
+                            style="background-color: rgb(52, 52, 183);">
+                            <i class="bi bi-facebook"></i>
+                            <p class="mb-0">Entrar com Facebook</p>
+                        </a>
                     </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce8.jpg');">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/bolo3.jpg');">
-                    </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce6.jpg');">
-                    </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce3.jpg');">
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce10.jpg');">
-                    </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/doce5.jpg');">
-                    </div>
-                    <div class="w-100 carousel-img" style="background-image: url('../img/insta/salgado3.jpg');">
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
 
-    <main>
-        <section class="pt-5 mb-5 row justify-content-center m-auto" style="max-width: 1600px;">
-            <div class="col-12 col-xl-9">
-                <h1 class="text-center my-5 h1">Produtos</h1>
-                <div id="produtos" class="row justify-content-center mt-5">
-                    <!-- Produtos carregados via JS -->
                 </div>
+
+                <div class="d-flex align-items-center justify-content-center gap-3 my-4">
+                    <div class="line"></div>
+                    <p class="m-0">ou</p>
+                    <div class="line"></div>
+                </div>
+
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3 justify-content-center">
+                        <!-- Email -->
+                        <div class="text-start w-75">
+                            <label for="email" class="form-label fs-5">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="email@exemplo.com"
+                                required>
+                            <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+                        </div>
+
+                        <!-- Senha -->
+                        <div class="text-start w-75">
+                            <label for="senha" class="form-label fs-5">Senha</label>
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" required
+                                minlength="6">
+                            <div class="invalid-feedback">Senha incorreta.</div>
+                        </div>
+
+                        <div id="apareceAlert" class="w-75"></div>
+
+                        <p>Digite o e-mail <span>JuliaCarv_14@gmail.com</span> e senha <span>1234</span> para entrar na conta.</p>
+                        <p class="mt-0">Esta parte é para simular um login real.</p>
+                    </div>
+
+                    <!-- Botão -->
+                    <div class="d-flex justify-content-center align-items-center mt-4 gap-4">
+                        <button type="submit" class="btn btn-danger btn-destaque2 px-4" onclick="login(); return false">Entrar</button>
+                        <a style="color: var(--cor-destaque);">Não possui uma conta? Cadastra-se</a>
+                    </div>
+                </form>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer>
@@ -153,44 +168,26 @@
     </footer>
 
     <script>
-        let produtosJSON = {};
+        const alertPlaceholder = document.getElementById('apareceAlert');
 
-        async function carregarProdutos() {
-            try {
-                const response = await fetch("../produtos.json");
-                produtosJSON = await response.json();
-                renderProdutos();
-            } catch (err) {
-                console.error("Erro ao carregar JSON:", err);
+        function showAlert(message, type) {
+            const wrapper = document.createElement('div');
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible fade show mt-3 p-2" role="alert">${message}</div>`
+            ].join('');
+            alertPlaceholder.innerHTML = ''; // limpa alertas anteriores
+            alertPlaceholder.append(wrapper);
+        }
+
+        function login() {
+            let user = document.getElementById('email').value
+            let senha = document.getElementById('senha').value
+            if (user == "JuliaCarv_14@gmail.com" && senha == "1234") {
+                location.href = 'conta.html'
+            } else {
+                showAlert('Email ou senha incorretos!', 'danger')
             }
         }
-
-        const produtosEl = document.getElementById("produtos");
-
-        function renderProdutos() {
-            Object.entries(produtosJSON).forEach(([id, p]) => {
-                let preco = parseFloat(p.preco);
-
-                produtosEl.innerHTML += `
-                    <a href="produto.html?id=${id}"
-                        class="card border-0 d-flex align-items-center text-decoration-none col-6 col-sm-6 col-md-4 col-lg-3 mb-5">
-                        <img class="circulo" src="${p.img}" alt="${p.nome}">
-                        <div class="card-body d-flex align-items-center justify-content-center flex-column">
-                            <h5 class="card-title text-center">${p.nome}</h5>
-                            <div class="d-flex justify-content-between align-items-center gap-2">
-                                <p class="card-text preco-uni">R$ ${preco.toFixed(2)}</p>
-                                <button class="btn btn-danger btn-destaque p-1 fs-6">Add</button>
-                            </div>
-                        </div>
-                    </a>
-                `;
-            });
-        }
-
-        document.addEventListener("change", renderProdutos);
-
-        // inicial
-        carregarProdutos();
     </script>
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -18,3 +18,8 @@
     box-shadow: var(--shadow-circulo);
     ;
 }
+
+.carousel-img {
+    background-size: cover; background-position: center;
+    width: 200px; height: 500px;
+}

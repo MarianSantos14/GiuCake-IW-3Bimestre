@@ -52,7 +52,7 @@
 }
 
 .banner-content h1 {
-    font-size: clamp(2rem, 24vw, 400px);
+    font-size: clamp(2rem, 24vw, 300px);
     font-family: 'Fredoka', sans-serif;
 }
 
