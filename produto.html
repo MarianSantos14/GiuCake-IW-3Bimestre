@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GiuCake | Produto</title>
-    <link rel="icon" href="../img/icon.svg" type="image/x-icon">
+    <link rel="icon" href="./img/icon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="./css/global.css">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container w-100">
                 <a class="navbar-brand p-0" style="width: 42px;" href="#"><img class="logoGiuCake w-100"
-                        src="../img/logoGiuCake.svg" alt="Logo GiuCake"></a>
+                        src="./img/logoGiuCake.svg" alt="Logo GiuCake"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -106,7 +106,7 @@
         const params = new URLSearchParams(window.location.search);
         const id = params.get("id");
 
-        fetch("../produtos.json")
+        fetch("./produtos.json")
             .then(res => res.json())
             .then(produtos => {
                 const produto = produtos[id];
@@ -168,8 +168,8 @@
             });
     </script>
 
-    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/modoDark.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/modoDark.js"></script>
 </body>
 
 </html>

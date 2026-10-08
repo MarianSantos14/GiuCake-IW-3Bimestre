@@ -5,7 +5,7 @@
         "sabor": "Maracujá",
         "preco": "6.50",
         "descricao": "Chocolate nobre com recheio de maracujá feito com a fruta",
-        "img": "../img/produtos/280.jpg"
+        "img": "./img/produtos/280.jpg"
     },
     "TrufaNinhoNutella": {
         "nome": "Trufa Ninho & Nutella",
@@ -13,7 +13,7 @@
         "sabor": "Ninho",
         "preco": "6.00",
         "descricao": "Chocolate nobre recheado com brigadeiro de leite Ninho e Nutella",
-        "img": "../img/produtos/282.jpg"
+        "img": "./img/produtos/282.jpg"
     },
     "BoloPNinho": {
         "nome": "Bolo de Pote Ninho",
@@ -21,7 +21,7 @@
         "sabor": "Ninho",
         "preco": "10.00",
         "descricao": "Massa branca, mousse de Ninho, finalizado com kitkat",
-        "img": "../img/produtos/187.jpg"
+        "img": "./img/produtos/187.jpg"
     },
     "BoloPAmeixa": {
         "nome": "Bolo de Pote Ameixa",
@@ -29,7 +29,7 @@
         "sabor": "Ameixa",
         "preco": "10.00",
         "descricao": "Massa branca, doce de leite artesanal, pedaços de ameixa, finalizado com chantilly",
-        "img": "../img/produtos/223.jpg"
+        "img": "./img/produtos/223.jpg"
     },
     "BoloPBrigadeiro": {
         "nome": "Bolo Pote Brigadeiro",
@@ -37,7 +37,7 @@
         "sabor": "Chocolate",
         "preco": "10.00",
         "descricao": "Massa de chocolate, brigadeiro ao leite, finalizado com granulado",
-        "img": "../img/produtos/189.jpg"
+        "img": "./img/produtos/189.jpg"
     },
     "BoloPPrestigio": {
         "nome": "Bolo Pote Prestígio",
@@ -45,7 +45,7 @@
         "sabor": "Prestígio",
         "preco": "10.00",
         "descricao": "Massa de chocolate, cocada de colher, finalizado com ganache de chocolate",
-        "img": "../img/produtos/188.jpg"
+        "img": "./img/produtos/188.jpg"
     },
     "Banoffe": {
         "nome": "Banoffe",
@@ -53,7 +53,7 @@
         "sabor": "Banana",
         "preco": "10.00",
         "descricao": "Base de bolacha amanteigada, bananas picadas, canela, finalizado com chantilly",
-        "img": "../img/produtos/200.jpg"
+        "img": "./img/produtos/200.jpg"
     },
     "ConeKinder": {
         "nome": "Cone Kinder",
@@ -61,7 +61,7 @@
         "sabor": "Chocolate",
         "preco": "10.00",
         "descricao": "Casquinha de sorvete banhada no chocolate ao leite, passada no amendoim, recheada de creme de Kinder branco e ao leite, finalizado com Kinder Bueno",
-        "img": "../img/produtos/217.jpg"
+        "img": "./img/produtos/217.jpg"
     },
     "ConeNinhoNutella": {
         "nome": "Cone Ninho com Nutella",
@@ -69,7 +69,7 @@
         "sabor": "Ninho",
         "preco": "10.00",
         "descricao": "Casquinha de sorvete banhada no chocolate branco, recheada de brigadeiro de ninho com Nutella",
-        "img": "../img/produtos/218.jpg"
+        "img": "./img/produtos/218.jpg"
     },
     "PaoMel": {
         "nome": "Pão de Mel",
@@ -77,7 +77,7 @@
         "sabor": "Mel",
         "preco": "6.00",
         "descricao": "Pão de mel tradicional com doce de leite artesanal",
-        "img": "../img/produtos/256.jpg"
+        "img": "./img/produtos/256.jpg"
     },
     "TulipaStikadinho": {
         "nome": "Tulipa Stikadinho",
@@ -85,7 +85,7 @@
         "sabor": "Stikadinho",
         "preco": "10.00",
         "descricao": "Casquinha de chocolate, trufado de chocolate ao leite, creme de morango, stikadinho picados",
-        "img": "../img/produtos/226.jpg"
+        "img": "./img/produtos/226.jpg"
     },
     "KinderBrownie": {
         "nome": "Kinder Supreme - Brownie",
@@ -93,7 +93,7 @@
         "sabor": "Brownie",
         "preco": "10.00",
         "descricao": "Creme de Kinder branco, creme de Kinder ao leite, finalizado com pedaços de Brownie e Kinder Bueno",
-        "img": "../img/produtos/196.jpg"
+        "img": "./img/produtos/196.jpg"
     },
     "FatiaHolandesa": {
         "nome": "Fatia Holandesa",
@@ -101,7 +101,7 @@
         "sabor": "Chocolate",
         "preco": "16.00",
         "descricao": "Base de bolacha amanteigada, creme holandês finalizada com ganache de chocolate ao leite",
-        "img": "../img/produtos/209.jpg"
+        "img": "./img/produtos/209.jpg"
     },
     "FatiaTresChocolates": {
         "nome": "Fatia Três Chocolates",
@@ -109,7 +109,7 @@
         "sabor": "Chocolate",
         "preco": "17.00",
         "descricao": "Base assada, brigadeiro ao leite, creme de chocolate branco, trufado ao leite, finalizado com morangos picados",
-        "img": "../img/produtos/206.jpg"
+        "img": "./img/produtos/206.jpg"
     },
     "CestinhaKinderBrownie": {
         "nome": "Cestinha Kinder com Brownie",
@@ -117,7 +117,7 @@
         "sabor": "Chocolate",
         "preco": "17.00",
         "descricao": "Cestinha de sorvete banhada no chocolate, creme de kinder branco, brownie, creme de kinder ao leite",
-        "img": "../img/produtos/228.jpg"
+        "img": "./img/produtos/228.jpg"
     },
     "CestinhaNinhoNutella": {
         "nome": "Cestinha Ninho com Nutella",
@@ -125,7 +125,7 @@
         "sabor": "Ninho",
         "preco": "17.00",
         "descricao": "Cestinha de sorvete banhada no chocolate, brigadeiro de Ninho e Nutella",
-        "img": "../img/produtos/227.jpg"
+        "img": "./img/produtos/227.jpg"
     },
     "CopoBrownieMaracuja": {
         "nome": "Copo Brownie & Maracujá",
@@ -133,7 +133,7 @@
         "sabor": "Maracujá",
         "preco": "19.00",
         "descricao": "Brigadeiro 50% cacau, pedaços de brownie, mousse de maracujá feito com a fruta",
-        "img": "../img/produtos/276.jpg"
+        "img": "./img/produtos/276.jpg"
     },
     "CopoMorangoff": {
         "nome": "Copo Morangoff",
@@ -141,7 +141,7 @@
         "sabor": "Morango",
         "preco": "19.00",
         "descricao": "Mousse de Ninho, morangos frescos picados, creme de baunilha, suspiros",
-        "img": "../img/produtos/273.jpg"
+        "img": "./img/produtos/273.jpg"
     },
     "CopoKinder": {
         "nome": "Copo Kinder",
@@ -149,7 +149,7 @@
         "sabor": "Oreo/Brownie/Kinder",
         "preco": "19.00",
         "descricao": "Brigadeiro de Oreo, pedaços de brownie, creme de Kinder Branco, creme de Kinder ao leite, finalizado com chantilly Kinder Bueno e mini Oreo",
-        "img": "../img/produtos/192.jpg"
+        "img": "./img/produtos/192.jpg"
     },
     "GelatinaMosaico": {
         "nome": "Gelatina Mosaico",
@@ -157,6 +157,6 @@
         "sabor": "Gelatina",
         "preco": "9.00",
         "descricao": "Gelatina com creme de leite condensado",
-        "img": "../img/produtos/194.jpg"
+        "img": "./img/produtos/194.jpg"
     }
 }
